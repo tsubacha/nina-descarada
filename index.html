@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ninadescarada</title>
+    <link rel="stylesheet" type="text/css" href="css/n-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $("#menuButton").click(function() {
+            $(this).toggleClass("active"); //メニューボタンの切り替え
+
+            /*-- メニューの開閉 --*/
+            if ($(this).hasClass("active")) {
+                $("body").css("oveflow", "hidden");
+                $("main").animate({
+                    "left": "-50%"
+                }, 400);
+                $(".glovalnavi")
+                    .show()
+                    .animate({
+                        "left": "50%"
+                    }, 400);
+            } else {
+                $("main").animate({
+                    "left": 0
+                }, 400);
+                $(".glovalnavi")
+                    .show()
+                    .animate({
+                        "left": "100%"
+                    }, 400, function() {
+                        $(".glovalnavi").hide();
+                        $("body").css("oveflow", "visuble");
+                    });
+            }
+
+            return false;
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a id="menuButton" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div id="header-logo"><img src="img/header-logo.gif"></div>
+            <!--/* ヘッダー */-->
+            <div class="glovalnavi">
+                <ul>
+                    <li id="about" class="text"><a href="#">About</a></li>
+                    <li id="blog" class="text"><a href="#">Blog</a></li>
+                    <li id="shop" class="text"><a href="#">Shop</a></li>
+                    <li id="material" class="text"><a href="#">Material</a></li>
+                    <li id="contact" class="text"><a href="#">Contact</a></li>
+                    <li id="speace" class="text">
+                        <div id="sns">
+                            <div class="sns">
+                                <a href="#"><img src="img/twitter.png"></a>
+                            </div>
+                            <div class="sns">
+                                <a href="#"><img src="img/youtube.png"></a>
+                            </div>
+                            <div class="sns">
+                                <a href="#"><img src="img/instagram.png"></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/* グローバルナビ　*/-->
+        <div class="contents">
+            <div class="right">
+                <div class="right-box box-4x3">
+                    <div class="rakugaki"><img src="img/insta-rakugaki.png"></div>
+                    <div class="insta-box box-1x1">
+                        <img src="img/insta-sample1.jpg">
+                    </div>
+                    <div id="insta-text">April Photoimage....
+                        <br>Theme＊Happy/Colorful/Flower</div>
+                </div>
+            </div>
+            <div class="left">
+                <div id="box1">
+                    <div class="box1 box-4x3">
+                        <div class="boxtext">
+                            <div class="hearticon"><img src="img/heart-icon.png"></div>
+                            <h1>Online shop</h1>
+                            <h2>New item</h2>
+                            <time class="time">2017-04-01</time>
+                            <hr>
+                            <p><b>Price＊1800yen</b>
+                                <br>
+                                <br>新作アイテムはこれからの季節に重宝するビビッドカラーなブレスレット♪コーデの差し色にぴったりです♪</p>
+                            <div class="photobox box-3x4"><img src="img/box1-sample1.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="box2">
+                    <div class="box2 box-4x3">
+                        <div class="boxtext">
+                            <div class="hearticon"><img src="img/heart-icon.png"></div>
+                            <h1>Material shop</h1>
+                            <h2>New item</h2>
+                            <time class="time">2017-04-01</time>
+                            <hr>
+                            <p><b>Cosmetic＊love</b>
+                                <br>
+                                <br>4月になりましたねー！ってことで女の子がお化粧している壁紙イラストを描きました☆よかったらお使いくださいまし。</p>
+                            <div class="photobox box-3x4"><img src="img/april.gif"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="box3">
+                    <div class="box3 box-13x81"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div id="bottombox">
+                    <div id="bottom-bg"><img src="img/bottom-bg.gif"></div>
+                    <hr class="dotline-a">
+                    <div id="bottom-box-text">
+                    <time>2017-4-12</time>
+                        <p>今日はとっても快晴😍🔆
+                        <br>だったので久しぶりに原宿へお買い物に行ったよー👗💕 
+                        <br><br>渋谷区に住んでた時は自転車飛ばせばすぐな距離で頻繁に通ってたんだけど😭
+                        <br>お引っ越ししてから全然行けてなかった😭💨 でも！たくさんお買い物して大満足ー！ <br>引きこもり症だけど、外の世界はやっぱいいね(*´ω`*)✨<br><br>カラフルなお洋服とか雑貨見て幸せすぎた( ✌︎'ω')👍 
+                        <br><br>サンキューマート行ったんだけど、やっぱいいね！安いし可愛い！！メガネ👓とかグラサン🕶とかいっぱいあった٩( 'ω' )و💋 
+                        <br><br>小物もアメキャラのやつとかいって 可愛いぃいい😹🙌💕 パワパフのバブルスのポーチは見つけた途端、即GET😁🍒使うのが楽しみ💞 そしてカフェ☕️って制作🖥したよん٩(๑❛ᴗ❛๑)۶
+                        </p>
+                    </div>
+                    <hr class="dotline-b">
+                </div>
+            </div>
+            <div class="bottom-2">
+                <div id="other-txt">Other homepage link</div>
+                <div id="other-bana">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/popberry-bana.gif"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/pbb-bana.gif"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/* コンテンツ内容 */-->
+        <div class="footer">Copyright © 2007-2012 TSUBACHA. All Rights Reserved.</div>
+    </div>
+</body>
